@@ -1,0 +1,32 @@
+{
+  "name": "foot-ball-ticket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "codegen": "playwright codegen",
+    "fmt": "prettier --write .",
+    "lint": "eslint . --ext .ts,.tsx || true",
+    "allure:gen": "allure generate ./allure-results --clean -o ./allure-report",
+    "allure:open": "allure open ./allure-report",
+    "allure": "npm run allure:gen && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.3",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
