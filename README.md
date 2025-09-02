@@ -1,7 +1,5 @@
 Playwright Tests
 
-Move to "tests" directory 
-- `cd tests`
 
 Install dependencies
 
